@@ -13,8 +13,8 @@ def get_weather():
         return
     
     # Replace with your actual API key
-    api_key = "4aecc5a8770ee048a9c220cf5e4b2867"  
-    base_url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
+    api_key = ""  #Replace with your api key
+    base_url = f"={city}&appid={api_key}&units=" #Replace with your base url
     
     try:
         response = requests.get(base_url)
@@ -49,8 +49,8 @@ def get_weather():
 
 # Function to send email
 def send_email(city, result):
-    sender_email = "ashik09siraj@gmail.com"  # Replace with your email
-    sender_password = "luje ovmj wtkc gcel"  # Replace with your email password
+    sender_email = ""  # Replace with your email
+    sender_password = ""  # Replace with your email password
     recipient_email = recipient_entry.get()
     
     if not recipient_email:
